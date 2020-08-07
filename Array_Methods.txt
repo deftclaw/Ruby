@@ -1,0 +1,104 @@
+arr = [1,2,3,4,5,6,7,8,9]
+arr2 = ['a','b','c','d','e']
+
+push # adds an element to end array
+
+        arr.push(10).push(11)
+        arr2.push('f').push('g')
+    arr
+        [1,2,3,4,5,6,7,8,9,10,11]
+
+    arr2
+        ['a','b','c','d','e','f','g']
+    
+    Use: Good for building lists to apply functions on.
+    
+pop # removes last element of array. [ Examples Continue from previous ] 
+
+    returns and removes the last element of the array
+    arr.pop(2)
+        [10,11]
+    arr
+        [1,2,3,4,5,6,7,8,9]
+        
+    Use: Reducing lists to be sure an operation is used only once. Reducing elements, which will not be effected
+    by the next operation.
+
+shift # adds an element to start of array
+        arr2 = ['b','c','d','e','f','g']
+    arr.shift('a')
+        arr2 = ['a','b','c','d','e','f','g']
+    
+    Use: Adding Elements to the beginning of an array. If you are 'pop'ping elements from the end of the list as 
+    you perform a process then this will add it as the last to be completed. 
+
+unshift # remove first element of array
+        arr.unshift(2)
+            ['a','b']
+        arr
+            ['c','d','e','f','g']
+            
+        Use: Reduce the list to be sure an operation is only performed onece, this way we can start with A and end with Z (Assuming the array is alphabetical.) Used in conjunction with shift, push, and pop you can append / remove the ends of the arrays to our hearts content. 
+
+slice # take subrange of elements
+
+        arr2[1]
+            'g'
+        arr2[2..4]
+            ['f','e','d']
+        arr2.slice!(/d.f/)
+            ['d','e','f']
+        Use: Select a specific sub-section of a string. This is invaluable for parsing. A lot of times some code will generate more info than you need, or extra text for human readability. By 'slice'ing we can get right to the pertinent information.
+
+each # run block for each element of array
+        arr.each {|x|puts(x)}
+            1
+            2
+            3
+            ...
+        Use: Running a state operation. By default it outputs to stdOUT but with each it is redirectable, to another variable, stdOUT or otherwise. If not explicitly captured the result is lost as soon as its iterated. This never changes the original so if we store the output we can have a copy of the original and the solution.
+        
+map # runs ablock for element of array, and returns array of the results of block
+        arr.each {|x|x * 2}
+            [2,4,6,8,10,12,14,16,18]
+        Usage: Runs a block for each element and stores the result in the array. This is good for transformative functions when we don't need to keep the original  
+        
+select # runs block for element of array, and returns array of elements where block is truthy
+
+reduce # starts with initial value for accumulator, runs block for 
+each element, return value is accumulator value for next interation
+
+
+list of first names sorted by age.
+
+group_by # 
+
+max #
+
+min # 
+
+find # 
+
+sum # 
+
+    sum to empty string to concatenate
+
+take # first x values
+
+first # 
+
+last # 
+
+rotate # 
+
+    with a number moves x elements to the end
+    
+start_with? # 
+
+end_with? # 
+
+
+Bang! example
+
+    arr.uniq! modifies 
+    
